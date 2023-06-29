@@ -7,6 +7,8 @@ import jakarta.validation.constraints.Positive;
 import jakarta.validation.constraints.Size;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "pizzas")
@@ -29,6 +31,17 @@ public class Pizza {
     @NotNull(message = "Price is required")
     @Positive(message = "Price must be a positive value")
     private BigDecimal price;
+
+    @OneToMany(mappedBy = "pizza", cascade = {CascadeType.REMOVE})
+    private List<Offer> offers = new ArrayList<>();
+
+    public List<Offer> getOffers() {
+        return offers;
+    }
+
+    public void setOffers(List<Offer> offers) {
+        this.offers = offers;
+    }
 
 //
 //    public Pizza(Integer id, String name, String description, String image, BigDecimal price) {

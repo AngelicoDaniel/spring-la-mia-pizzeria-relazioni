@@ -15,3 +15,6 @@ INSERT INTO pizzas (name, description, image, price) VALUES ('Bufalina', 'Pizza 
 INSERT INTO pizzas (name, description, image, price) VALUES ('Prosciutto e Funghi', 'Pizza with tomato sauce, mozzarella, ham, and mushrooms', 'prosciutto_funghi.jpg', 10.99);
 
 INSERT INTO pizzas (name, description, image, price) VALUES ('Pizza Melanzana', 'Pizza with yellow tomato sauce, donkey milk mozzarella, smoked herring, silphium and cumin', 'pizza_melanzana.jpg', 869.51);
+INSERT INTO `special_offers` (`end_date`, `id`, `pizza_id`, `start_date`, `title`) VALUES ('2023-06-20', '1', '2', '2023-06-05', 'offerta speciale1');
+INSERT INTO `special_offers` (`end_date`, `id`, `pizza_id`, `start_date`, `title`) VALUES ('2023-05-15', '2', '3', '2023-09-10', 'offerta speciale2');
+INSERT INTO `special_offers` (`end_date`, `id`, `pizza_id`, `start_date`, `title`) VALUES ('2024-04-10', '5', '4', '2024-08-08', 'offerta speciale3');
