@@ -18,3 +18,8 @@ INSERT INTO pizzas (name, description, image, price) VALUES ('Pizza Melanzana', 
 INSERT INTO `special_offers` (`end_date`, `id`, `pizza_id`, `start_date`, `title`) VALUES ('2023-06-20', '1', '2', '2023-06-05', 'offerta speciale1');
 INSERT INTO `special_offers` (`end_date`, `id`, `pizza_id`, `start_date`, `title`) VALUES ('2023-05-15', '2', '3', '2023-09-10', 'offerta speciale2');
 INSERT INTO `special_offers` (`end_date`, `id`, `pizza_id`, `start_date`, `title`) VALUES ('2024-04-10', '5', '4', '2024-08-08', 'offerta speciale3');
+INSERT INTO ingredients (name) VALUES ('pomodoro');
+INSERT INTO ingredients (name) VALUES ('mozzarella');
+INSERT INTO ingredients (name) VALUES ('basilico');
+
+INSERT INTO `pizza_ingredients` (`ingredient_id`, `pizza_id`) VALUES ('1', '1');
